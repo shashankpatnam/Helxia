@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Reveal } from './Reveal'
 import { scrollEngine } from '../lib/scrollEngine'
+import sequencingImg from '../assets/sequencing.avif'
+import assayImg from '../assets/assay.avif'
+import microscopyImg from '../assets/microscopy.avif'
 
 const STEPS = [
   {
@@ -9,7 +12,7 @@ const STEPS = [
     body: 'A generative model proposes 40,000 promoter–effector pairs and ranks them against our single-cell atlas of 12M annotated cells.',
     cap: 'DESIGN — IN SILICO',
     img: 'Sequencing',
-    src: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1400&q=70',
+    src: sequencingImg,
   },
   {
     idx: '02',
@@ -17,7 +20,7 @@ const STEPS = [
     body: 'Robotic cell factories synthesise the top 500 circuits and run them through pooled functional screens in patient-derived organoids.',
     cap: 'BUILD — WET LAB',
     img: 'Assay',
-    src: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1400&q=70',
+    src: assayImg,
   },
   {
     idx: '03',
@@ -25,7 +28,7 @@ const STEPS = [
     body: 'Every screen returns to the model. Prediction accuracy has climbed from 34% to 91% across nine cycles — and keeps climbing.',
     cap: 'LEARN — MODEL UPDATE',
     img: 'Microscopy',
-    src: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&w=1400&q=70',
+    src: microscopyImg,
   },
 ]
 

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Reveal } from './Reveal'
 import { scrollEngine } from '../lib/scrollEngine'
 import { useReducedMotion } from '../hooks/useReducedMotion'
+import labBg from '../assets/lab-bg.avif'
 
 export function ParallaxQuote() {
   const wrapRef = useRef<HTMLDivElement>(null)
@@ -25,7 +26,7 @@ export function ParallaxQuote() {
     <section ref={wrapRef} className="relative z-[3] overflow-hidden" style={{ height: '72vh', minHeight: 380 }}>
       <div ref={layerRef} className="absolute left-0 w-full will-change-transform" style={{ top: '-14%', height: '128%' }}>
         <img
-          src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=2000&q=70"
+          src={labBg}
           alt="Research laboratory"
           className="h-full w-full object-cover"
           style={{ filter: 'grayscale(1) contrast(1.12) brightness(.62)' }}
